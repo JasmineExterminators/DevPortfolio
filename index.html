@@ -59,46 +59,67 @@
 				<section id="features">
 					<div class="container">
 						<header>
-							<h2>Welcome friends! These are my <strong>Passion Projects</strong>!</h2>
+							<h2>What's up boss! These are my <strong>Passion Projects</strong>!</h2>
 						</header>
+
 						<div class="row aln-center">
 							<div class="col-4 col-6-medium col-12-small">
 
 								<!-- Feature -->
 									<section>
-										<a href="touchlessSolitaire.html" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+										<a href="CustomIzzes.html" class="image featured"><img src="images/customIzzesLayoutFront.jpg" alt="" /></a>
+										<header>
+											<h3>Custom Strain Gauge & Load Cell Amplifier</h3>
+										</header>
+										<p>This is a custom ADC-to-CAN differential voltage amplifier that is able to amplify precise signals in the microvolt magnitude. 
+											This custom PCB was used to amplify load cell and strain gauge sensors integrated in our electric racecar's suspension (pushrods and control arms)<br>
+											<a href="CustomIzzes.html">See Schematics and Design Decisions</a><br>
+											<i>Tech Stack: Signal Processing, Altium PCB design, C firmware, circuit design, ICs, Microcontrollers (STM32)</i><br>
+											 Date: August 2025
+										</p>
+									</section>
+
+							</div>
+
+
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+										<a href="touchlessSolitaire.html" class="image featured"><img src="images/touchless_solitaire_pic.jpg" alt="" /></a>
 										<header>
 											<h3>Touchless Solitaire Through Brain Waves and Eye-Tracking</h3>
 										</header>
 										<p>This is a game of solitaire that allows the player to play with thought and eye movement alone.<br>
+											<a href="https://youtu.be/zTOD8OqdfVg">Explanation Video</a><br>
+											<a href="https://github.com/JasmineExterminators/BrainwavesToLetters">GitHub</a><br>
 											<i>Tech Stack: Python, OpenCV, the Neurosity Crown, and <a href="https://academy.cs.cmu.edu/docs">CMU Graphics</a>
-											 (a MVC graphics package that uses persistent objects).</i>
+											 (a MVC graphics package that uses persistent objects).</i><br>
+											 Date: December 2024
 										</p>
 									</section>
 
 							</div>
-
+							
 							<div class="col-4 col-6-medium col-12-small">
 
 								<!-- Feature -->
 									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Lawn-E: A Robotic Weeder</h3>
-										</header>
-										<p>An automated, herbicide-free solution to uproot weeds from a lawn. 
-											Leverages computer vision to identify weeds and properly adjust the robot's position.<br>
-											Top 15 at Hack-A-Startup Competition (Graduate Entrepreneurship Program)<br>
-											<i>Tech Stack: Solidworks CAD, Pytorch, Microcontrollers</i>
-										</p>
-									</section>
-
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
-
-								<!-- Feature -->
-									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="#" class="image featured">
+											<video id="ddr-video" height="250" style="width:100%;transition:height 0.3s;" controls>
+												<source src="videos/Verilog_DDR_Demo.mp4" type="video/mp4">
+												Your browser does not support the video tag.
+											</video>
+											</a>
+											<script>
+											const video = document.getElementById('ddr-video');
+											video.addEventListener('play', function() {
+												video.style.height = '500px'; // or use '100vh' for fullscreen effect
+											});
+											video.addEventListener('pause', function() {
+												video.style.height = '250px';
+											});
+										</script>
 										<header>
 											<h3>Dance Dance Revolution on an FPGA with Verilog!</h3>
 										</header>
@@ -106,7 +127,8 @@
 											We learnt how to code in Verilog for the first time within one week during the Build18, 2025 Hackathon! From 0 exposure to completing a working project as freshmen!<br>
 											We were also nominated for an award!<br>
 											<a href="https://drive.google.com/file/d/12KlFyAqKSl93MaNU3oEacqAPJ4zGqbse/view?usp=sharing">Slideshow</a><br>
-											<i>Tech Stack: Verilog, FPGAs, Circuitry</i>
+											<i>Tech Stack: Verilog, FPGAs, Circuitry</i><br>
+											Date: January 2025
 										</p>
 									</section>
 
@@ -116,7 +138,12 @@
 
 								<!-- Feature -->
 									<section>
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="#" class="image featured">
+											<video id="ddr-video" height="250" style="width:100%;transition:height 0.3s;" controls>
+												<source src="videos/Carleton_MEDucation_presentation.mp4" type="video/mp4">
+												Your browser does not support the video tag.
+											</video>
+										</a>
 										<header>
 											<h3>MEDucation</h3>
 										</header>
@@ -124,22 +151,61 @@
 											Patients are able to scan a pill bottle label, then our app outputs instructions and ingredients legibly and defines all medical jargon detected.
 											Each year in the U.S, about 1.5 million PREVENTABLE medication errors occur.<br>
 											1st place in senior division Technovation pitch competition<br>
-											<i>Tech Stack: API implementation, database manipulation, app UI/UX, camera capture, data extraction</i>
+											<i>Tech Stack: API implementation, database manipulation, app UI/UX, camera capture, data extraction</i><br>
+											Date: May 2024
 										</p>
 									</section>
+							</div>
+
+							
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+										<a href="PiHat.html" class="image featured"><img src="images/PiHat_ADC_cond_schematics.jpg" alt="" /></a>
+										<header>
+											<h3>Custom Telemetry PiHat</h3>
+										</header>
+										<p>This is a custom raspberry PI hat.
+											This custom PCB was used to process analog and digital outputs from tire temperature, time-of-flight, and linear potentiometer sensors.
+											After processing the data, the PiHat stores it on the Pi itself and we SSH into the Pi to retrieve telemetry data in real-time.<br>
+											<a href="PiHat.html">See Schematics and Design Decisions</a><br>
+											<i>Tech Stack: RTOS, Python Threads, Parallel Computing, Signal Processing, Altium PCB design, Python firmware, circuit design, ICs, Raspberry PIs</i><br>
+											 Date: September 2025
+										</p>
+									</section>
+
 							</div>
 
 							<div class="col-4 col-6-medium col-12-small">
 
 								<!-- Feature -->
 									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="AMI.html" class="image featured"><img src="images/AMI_front_layout_3d.jpg" alt="" /></a>
+										<header>
+											<h3>Autonomous Mission Indicator PCB</h3>
+										</header>
+										<p>This is a custom PCB I designed in order to control our autonomous electric car's drive state.<br>
+											<a href="AMI.html">See Schematics and Design Decisions</a><br>
+											<i>Tech Stack: RTOS, CAN, Altium PCB design, C firmware, circuit design, ICs, Microcontrollers (STM32)</i><br>
+											 Date: September 2025
+										</p>
+									</section>
+
+							</div>
+
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+										<a href="#" class="image featured"><img src="images/bubble_paper_proto.jpeg" alt="" /></a>
 										<header>
 											<h3>Bubble App</h3>
 										</header>
 										<p>Built a mobile app that prompts collective self-improvement and helps maintain connections 
 											amongst long-distance friend groups.<br>
-											<i>Tech Stack: XCode, Swift</i>
+											<i>Tech Stack: XCode, Swift</i><br>
+											Date: July 2024
 
 										</p>
 									</section>
@@ -149,13 +215,14 @@
 
 								<!-- Feature -->
 									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="#" class="image featured"><img src="images/TSSI_2d_layout_front.jpg" alt="" /></a>
 										<header>
 											<h3>Tractive System Status Indicator</h3>
 										</header>
 										<p>I designed a PCB on Carnegie Mellon's Formula SAE team &#40;electric race car team&#41; to help make 
 											sure any dangerous voltages present in the tractive system is brought to <strong>light</strong> - haha see what I did there :&#41;<br>
-											<i>Tech Stack: PCB design, Altium Designer</i>
+											<i>Tech Stack: PCB design, Altium Designer</i><br>
+											Date: January 2025
 										</p>
 									</section>
 
@@ -164,12 +231,13 @@
 
 								<!-- Feature -->
 									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="#" class="image featured"><img src="images/medication_tracker.jpg" alt="" /></a>
 										<header>
 											<h3>Attachable Motion Sensing Medicine Tracker for Elderly</h3>
 										</header>
 										<p>A small device attached to pill bottles that can alert and track medication taken.<br>
-											<i>Tech Stack: microcontrollers, physical design</i>
+											<i>Tech Stack: microcontrollers, physical design</i><br>
+											Date: July 2023
 										</p>
 									</section>
 
@@ -178,18 +246,59 @@
 
 								<!-- Feature -->
 									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="#" class="image featured"><img src="images/pig_3d.JPG" alt="" /></a>
 										<header>
 											<h3>3D Printed Piggy Pencil Holder and Man Pen Holder</h3>
 										</header>
 										<p>Piggy Pencil Holder: A gift for my mom! I designed a pencil holder shaped like an open-mouthed pig.<br>
 											Man Pen Holder: A gift for my dad! I designed a magnetic pen holder shaped like a man! - My first 3D printing project and first Solidworks CAD<br>
-											<i>Tech Stack: Solidworks CAD, 3D printing</i>
+											<i>Tech Stack: Solidworks CAD, 3D printing</i><br>
+											Date: January 2025
+										</p>
+									</section>
+
+							</div>
+							
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+										<a href="#" class="image featured">
+											<video id="ddr-video" height="250" style="width:100%;transition:height 0.3s;" controls>
+												<source src="videos/windmilElecGen.mp4" type="video/mp4">
+												Your browser does not support the video tag.
+											</video>
+										</a>
+										<header>
+											<h3>Generating Electricity From Self-Made Windmill Aspect Ratio Research</h3>
+										</header>
+										<p>I conducted my own research by generating electricity from a windmill made of soda cans. 
+											The investigation surrounded how the aspect ratio of a windmill's blades affects its effeciency.
+											<i>Tech Stack: Motors, Voltage, Self-Conducted Research Skills</i><br>
+											Date: December 2023
 										</p>
 									</section>
 
 							</div>
 
+							<div class="col-4 col-6-medium col-12-small">
+
+								<!-- Feature -->
+									<section>
+										<a href="#" class="image featured"><img src="images/Lawn-E_comp_analysis.jpg" alt="" /></a>
+										<header>
+											<h3>Lawn-E: A Robotic Weeder</h3>
+										</header>
+										<p>An automated, herbicide-free solution to uproot weeds from a lawn. 
+											Leverages computer vision to identify weeds and properly adjust the robot's position.<br>
+											Top 15 at Hack-A-Startup Competition (Graduate Entrepreneurship Program)<br>
+											<i>Tech Stack: Solidworks CAD, Pytorch, Microcontrollers</i><br>
+											Date: November 2024
+										</p>
+									</section>
+
+							</div>
+							
 							
 
 							<div class="col-12">
@@ -209,26 +318,6 @@
 							<h2><strong>Get in touch:</strong></h2>
 						</header>
 						<div class="row">
-							<div class="col-6 col-12-medium">
-								<section>
-									<form method="post" action="#">
-										<div class="row gtr-50">
-											<div class="col-6 col-12-small">
-												<input name="name" placeholder="Name" type="text" />
-											</div>
-											<div class="col-6 col-12-small">
-												<input name="email" placeholder="Email" type="text" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message"></textarea>
-											</div>
-											<div class="col-12">
-												<a href="mailto:ca.jasmineli@gmail.com" class="form-button-submit button icon solid fa-envelope">Send Message</a>
-											</div>
-										</div>
-									</form>
-								</section>
-							</div>
 							<div class="col-6 col-12-medium">
 								<section>
 									<p>Please reach out if you'd be interesting in working together! Currently open to work!</p>

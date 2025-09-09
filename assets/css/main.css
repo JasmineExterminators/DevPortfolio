@@ -1505,8 +1505,17 @@ input, select, textarea {
 
 		.image.featured {
 			display: block;
+			height: 250px;
 			width: 100%;
 			margin: 0 0 3.5em 0;
+		}
+
+		.image.featured img{
+			display: block;
+			height: 250px;
+			width: 100%;
+			margin: 0 0 3.5em 0;
+			object-fit: cover;
 		}
 
 		.image.left {
@@ -1921,6 +1930,7 @@ input, select, textarea {
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
 			font-size: 3em;
 			letter-spacing: 13px;
+			line-height: 1.2;
 		}
 
 			#header h1 a {
